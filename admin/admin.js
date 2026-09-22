@@ -19,8 +19,8 @@ async function loadBookings() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/bookings"
-        );
+            "https://bhanu-photography.onrender.com/api/bookings"
+            );
 
         const data = await response.json();
 
