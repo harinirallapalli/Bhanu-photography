@@ -327,7 +327,7 @@ bookingForm.addEventListener("submit", async function(event){
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/bookings",
+            "https://bhanu-photography.onrender.com/api/bookings",
             {
                 method: "POST",
 
