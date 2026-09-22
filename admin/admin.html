@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Bhanu Photography</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+    <header class="admin-header">
+
+        <div class="logo">
+            📸 Bhanu Photography
+        </div>
+
+        <h1>Admin Dashboard</h1>
+
+    </header>
+
+
+    <main class="admin-container">
+
+        <div class="dashboard-top">
+
+            <div>
+                <h2>Bookings</h2>
+                <p>Manage customer photography bookings</p>
+            </div>
+
+            <button id="refreshBtn">
+                🔄 Refresh
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Requirements</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="bookingTableBody">
+
+                    <tr>
+
+                        <td colspan="10" class="loading">
+                            Loading bookings...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
