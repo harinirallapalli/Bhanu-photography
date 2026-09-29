@@ -120,6 +120,7 @@ app.patch("/api/bookings/:id/status", async (req, res) => {
             "Confirmed",
             "Cancelled"
         ];
+       
 
         if (!allowedStatuses.includes(status)) {
             return res.status(400).json({
@@ -154,4 +155,44 @@ app.patch("/api/bookings/:id/status", async (req, res) => {
             message: "❌ Failed to update booking status"
         });
     }
+});
+// =========================
+// DELETE BOOKING
+// =========================
+
+app.delete("/api/bookings/:id", async (req, res) => {
+    try {
+
+        const { id } = req.params;
+
+        const result = await pool.query(
+            `DELETE FROM bookings
+             WHERE id = $1
+             RETURNING *`,
+            [id]
+        );
+
+        if (result.rows.length === 0) {
+            return res.status(404).json({
+                message: "❌ Booking not found"
+            });
+        }
+
+        res.json({
+            message: "✅ Booking deleted successfully!",
+            booking: result.rows[0]
+        });
+
+    } catch (error) {
+
+        console.error("Delete booking error:", error.message);
+
+        res.status(500).json({
+            message: "❌ Failed to delete booking",
+            error: error.message
+        });
+    }
+});
+app.listen(PORT, () => {
+    console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
