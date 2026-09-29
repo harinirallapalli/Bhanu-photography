@@ -193,6 +193,8 @@ app.delete("/api/bookings/:id", async (req, res) => {
         });
     }
 });
+
+//start the server
 app.listen(PORT, () => {
     console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
