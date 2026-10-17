@@ -15,17 +15,56 @@
 <body>
 
     <header class="admin-header">
-
+        
         <div class="logo">
             📸 Bhanu Photography
         </div>
 
-        <h1>Admin Dashboard</h1>
+        <div class="admin-header-right">
+
+            <h1>Admin Dashboard</h1>
+
+            <button id="logoutBtn">
+                🚪 Logout
+            </button>
+        </div>
 
     </header>
-
-
+    
     <main class="admin-container">
+        <!-- SUMMARY CARDS -->
+        <div class="summary-cards">
+            <div class="summary-card">
+                <h3>Total Bookings</h3>
+                <p id="totalBookings">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Pending</h3>
+                <p id="pendingBookings">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Confirmed</h3>
+                <p id="confirmedBookings">0</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>Cancelled</h3>
+                <p id="cancelledBookings">0</p>
+            </div>
+
+        </div>
+        <!-- BOOKING STATISTICS -->
+        <div class="booking-statistics">
+            
+            <h2>Booking Statistics</h2>
+            
+            <div class="chart-container">
+                <canvas id="bookingChart"></canvas>
+            </div>
+
+        </div>
 
         <div class="dashboard-top">
 
@@ -37,6 +76,22 @@
             <button id="refreshBtn">
                 🔄 Refresh
             </button>
+
+        </div>
+        <!-- SEARCH & FILTER -->
+        <div class="booking-filters">
+            <input
+                type="text"
+                id="searchBooking"
+                placeholder="🔍 Search customer, phone, event or location..."
+            >
+
+            <select id="statusFilter">
+                <option value="All">All Status</option>
+                <option value="Pending">Pending</option>
+                <option value="Confirmed">Confirmed</option>
+                <option value="Cancelled">Cancelled</option>
+            </select>
 
         </div>
 
@@ -83,7 +138,7 @@
 
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="admin.js"></script>
 
 </body>

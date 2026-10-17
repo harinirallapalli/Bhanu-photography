@@ -1,592 +1,696 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Bhanu Photography - Wedding, Pre-Wedding, Birthday, Baby Shoot, Outdoor Photography and Cinematic Videography in Telangana.">
-
-    <meta name="keywords" content="Photography, Wedding Photography, Pre Wedding, Birthday Shoot, Baby Shoot, Bhanu Photography, Telangana Photographer">
-
-    <meta name="author" content="Bhanu Photography">
-
-    <meta name="theme-color" content="#8A2BE2">
-
-    <link rel="icon" href="images/logo.png">
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhanu Photography</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Bhanu Photography | Capturing Moments, Creating Memories</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
-    <!--================ LOADER =================-->
-
-<div id="loader">
-
-    <div class="loader-content">
-
-        <img src="images/logo.png" alt="Bhanu Photography Logo">
-
-        <h2>Bhanu Photography</h2>
-
-        <div class="loader-line"></div>
-
-    </div>
-
-</div>
 
 <!-- ================= NAVBAR ================= -->
 
-<header>
+<header class="navbar-wrapper">
+    <nav class="navbar">
 
-<nav class="navbar">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="images/bhanu-photography-transparent-final.png" alt="Bhanu Photography">
+        </a>
 
-<div class="logo">
-    <a href="index.html">
-        <img src="images/logo.png" alt="Bhanu Photography Logo">
-    </a>
-</div>
+        <!-- Menu -->
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-<div class="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-</div>
+        <!-- Book Button -->
+        <a href="booking.html" class="book-btn">
+            <i class="fa-solid fa-calendar-days"></i>
+            Book Now
+        </a>
 
-<ul class="nav-links">
+        <!-- Mobile menu -->
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="pricing.html">Pricing</a></li>
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-<div class="menu-btn">
-<i class="fa-solid fa-bars"></i>
-</div>
-
-</nav>
-
+    </nav>
 </header>
 
+
 <!-- ================= HERO ================= -->
-<section class="hero-slider">
 
-<div class="slide active">
+<section class="hero">
 
-<img src="images/slider/slide1.jpg" alt="Wedding">
+    <div class="hero-overlay"></div>
 
-<div class="overlay"></div>
+    <div class="hero-content">
 
-<div class="hero-content">
-
-<h1>Capture Every Beautiful Moment</h1>
-
-<p>Professional Wedding & Event Photography</p>
-
-<a href="booking.html" class="hero-btn">Book Now</a>
-
-<a href="gallery.html" class="hero-btn2">View Gallery</a>
-
-</div>
-
-</div>
-
-<div class="slide">
-
-<img src="images/slider/slide2.jpg" alt="Photography">
-
-<div class="overlay"></div>
-
-<div class="hero-content">
-
-<h1>Your Story Through Our Lens</h1>
-
-<p>Creative Photography for Every Occasion</p>
-
-<a href="booking.html" class="hero-btn">Book Now</a>
-
-<a href="gallery.html" class="hero-btn2">View Gallery</a>
-
-</div>
-
-</div>
-
-<div class="slide">
-
-<!--==========================
-STATISTICS
-===========================-->
-
-<section class="stats-section">
-    <div class="stat-box" data-aos="zoom-in"></div>
-
-    <h2>Our Achievements</h2>
-
-    <div class="stats-container">
-
-        <div class="stat-box">
-            <i class="fa-solid fa-users"></i>
-            <h1 class="counter" data-target="500">0</h1>
-            <p>Happy Clients</p>
-        </div>
-
-        <div class="stat-box">
+        <p class="hero-subtitle">
             <i class="fa-solid fa-camera"></i>
-            <h1 class="counter" data-target="1000">0</h1>
-            <p>Photoshoots</p>
+            BHANU PHOTOGRAPHY
+        </p>
+
+        <h1>
+            Capturing Moments,<br>
+            <span>Creating Memories</span>
+        </h1>
+
+        <p class="hero-text">
+            We turn your precious moments into timeless memories
+            through creative and beautiful photography.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="booking.html" class="btn gold-btn">
+                <i class="fa-solid fa-calendar-check"></i>
+                Book Now
+            </a>
+
+            <a href="gallery.html" class="btn outline-btn">
+                <i class="fa-solid fa-images"></i>
+                View Gallery
+            </a>
+
         </div>
 
-        <div class="stat-box">
-            <i class="fa-solid fa-award"></i>
-            <h1 class="counter" data-target="8">0</h1>
-            <p>Years Experience</p>
-        </div>
+    </div>
 
-        <div class="stat-box">
-            <i class="fa-solid fa-star"></i>
-            <h1 class="counter" data-target="50">0</h1>
-            <p>Awards Won</p>
-        </div>
+    <div class="scroll">
+
+        <span>SCROLL</span>
+
+        <i class="fa-solid fa-chevron-down"></i>
 
     </div>
 
 </section>
+
+
+<!-- ================= FEATURED GALLERY ================= -->
+
+<section class="gallery-section">
+
+    <div class="section-heading">
+
+        <p>OUR PORTFOLIO</p>
+
+        <h2>Featured <span>Moments</span></h2>
+
+        <div class="line"></div>
+
+        <p class="description">
+            A glimpse of the beautiful stories we have captured.
+        </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item big">
+
+            <img src="images/wedding01.jpg"
+                 alt="Wedding Photography">
+
+            <div class="gallery-info">
+                <h3>Wedding</h3>
+                <p>Beautiful forever moments</p>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="images/pre wedding.jpg"
+                 alt="Pre wedding Photography">
+
+            <div class="gallery-info">
+                <h3>Pre-Wedding</h3>
+                <p>Love stories</p>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="images/portrait.jpg"
+                 alt="Portrait Photography">
+
+            <div class="gallery-info">
+                <h3>Portrait</h3>
+                <p>Your personality, captured</p>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="images/birthday.jpg"
+                 alt="Birthday Photography">
+
+            <div class="gallery-info">
+                <h3>Birthday</h3>
+                <p>Celebrate every moment</p>
+            </div>
+
+        </div>
+
+
+        <div class="gallery-item">
+
+            <img src="images/baby.jpeg"
+                 alt="Baby Photography">
+
+            <div class="gallery-info">
+                <h3>Baby Photography</h3>
+                <p>Precious little memories</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="center">
+
+        <a href="gallery.html" class="dark-btn">
+            View Full Gallery
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+</section>
+
 
 <!-- ================= SERVICES ================= -->
 
 <section class="services">
 
-<h2>Our Services</h2>
+    <div class="section-heading dark">
 
-<div class="service-container">
+        <p>WHAT WE OFFER</p>
 
-<div class="card">
+        <h2>Our <span>Services</span></h2>
 
-<i class="fa-solid fa-camera-retro"></i>
+        <div class="line"></div>
 
-<h3>Wedding</h3>
+    </div>
 
-<p>Luxury wedding photography with cinematic memories.</p>
 
-</div>
+    <div class="service-grid">
 
-<div class="card">
+        <div class="service-card">
 
-<i class="fa-solid fa-heart"></i>
+            <div class="service-icon">
+                <i class="fa-solid fa-ring"></i>
+            </div>
 
-<h3>Pre Wedding</h3>
+            <h3>Wedding Photography</h3>
 
-<p>Creative outdoor and indoor couple photography.</p>
+            <p>
+                Capture every emotional and beautiful moment
+                of your special day.
+            </p>
 
-</div>
+            <a href="services.html">
+                Explore Service →
+            </a>
 
-<div class="card">
-
-<i class="fa-solid fa-cake-candles"></i>
-
-<h3>Birthday</h3>
-
-<p>Capture unforgettable birthday celebrations.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= GALLERY PREVIEW ================= -->
-
-<section class="gallery-preview">
-
-    <h2>Our Gallery</h2>
-
-    <p>Every picture tells a beautiful story.</p>
-
-    <div class="gallery-container">
-
-        <div class="gallery-card">
-            <img src="images/gallery/baby outdoor.jpeg" alt="Baby Outdoor">
-            <h3>Baby Outdoor</h3>
         </div>
 
-        <div class="gallery-card">
-            <img src="images/gallery/baby.jpeg" alt="Baby Shoot">
-            <h3>Baby Shoot</h3> 
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3>Pre-Wedding</h3>
+
+            <p>
+                Creative photography to tell your unique
+                love story.
+            </p>
+
+            <a href="services.html">
+                Explore Service →
+            </a>
+
         </div>
 
-        <div class="gallery-card">
-            <img src="images/gallery/birthday.jpeg" alt="Birthday">
-            <h3>Birthday</h3>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-cake-candles"></i>
+            </div>
+
+            <h3>Birthday Events</h3>
+
+            <p>
+                Turn your celebrations into unforgettable
+                memories.
+            </p>
+
+            <a href="services.html">
+                Explore Service →
+            </a>
+
         </div>
 
-        <div class="gallery-card">
-            <img src="images/gallery/halfsaree.jpeg" alt="Maturity Ceremony">
-            <h3>Maturity Ceremony</h3>
+
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-baby"></i>
+            </div>
+
+            <h3>Baby Photography</h3>
+
+            <p>
+                Preserve your little one's sweetest moments
+                forever.
+            </p>
+
+            <a href="services.html">
+                Explore Service →
+            </a>
+
         </div>
 
-        <div class="gallery-card">
-            <img src="images/gallery/pre wedding.jpeg" alt="Pre Wedding">
-            <h3>Pre Wedding</h3>
-        </div>
 
-        <div class="gallery-card">
-            <img src="images/gallery/wedding01.jpeg" alt="wedding">
-            <h3>wedding</h3>
+        <div class="service-card">
+
+            <div class="service-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <h3>Portrait Photography</h3>
+
+            <p>
+                Professional portraits that express your
+                personality and style.
+            </p>
+
+            <a href="services.html">
+                Explore Service →
+            </a>
+
         </div>
 
     </div>
 
-    <a href="gallery.html" class="gallery-btn">View Full Gallery</a>
-
 </section>
+
+
 <!-- ================= ABOUT ================= -->
 
 <section class="about">
 
     <div class="about-image">
 
-        <img src="images/photographer.jpg" alt="Photographer">
+        <img src="images/photographer.png"
+             alt="Bhanu Photography">
 
     </div>
+
 
     <div class="about-content">
 
-        <h4>About Bhanu Photography</h4>
+        <p class="small-title">
+            ABOUT BHANU PHOTOGRAPHY
+        </p>
 
-        <h2>Capturing Every Moment with Passion & Creativity</h2>
+        <h2>
+            Memories That Last
+            <span>Forever</span>
+        </h2>
 
         <p>
-            Bhanu Photography specializes in capturing timeless memories through
-            creative photography and cinematic storytelling. We believe every
-            smile, every emotion, and every celebration deserves to be preserved
-            beautifully.
+            Bhanu Photography is passionate about capturing
+            life's most meaningful moments with creativity,
+            emotion and professional photography.
         </p>
 
         <p>
-            From weddings and pre-wedding shoots to birthdays, baby shoots,
-            fashion, and corporate events, we provide premium photography
-            services with modern equipment and artistic vision.
+            From weddings and pre-wedding shoots to birthdays,
+            baby photography and portraits, we create photographs
+            that you can treasure for years.
         </p>
 
-        <a href="about.html" class="about-btn">Read More</a>
+
+        <div class="features">
+
+            <div>
+                <i class="fa-solid fa-camera"></i>
+                <span>Professional Photography</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <span>Creative Editing</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-heart"></i>
+                <span>Emotional Storytelling</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-clock"></i>
+                <span>On-Time Delivery</span>
+            </div>
+
+        </div>
+
+
+        <a href="about.html" class="dark-btn">
+            About Us
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
     </div>
 
 </section>
-<!-- ================= COUNTER SECTION ================= -->
 
-<section class="counter-section">
-
-    <div class="counter-box">
-        <h2 class="counter" data-target="500">0</h2>
-        <p>Happy Clients</p>
-    </div>
-
-    <div class="counter-box">
-        <h2 class="counter" data-target="1200">0</h2>
-        <p>Photoshoots</p>
-    </div>
-
-    <div class="counter-box">
-        <h2 class="counter" data-target="8">0</h2>
-        <p>Years Experience</p>
-    </div>
-
-    <div class="counter-box">
-        <h2 class="counter" data-target="50">0</h2>
-        <p>Awards Won</p>
-    </div>
-
-</section>
 
 <!-- ================= TESTIMONIALS ================= -->
 
 <section class="testimonials">
 
-    <h4>Testimonials</h4>
-    <h2>What Our Clients Say</h2>
+    <div class="section-heading">
 
-    <div class="testimonial-container">
+        <p>CLIENT LOVE</p>
 
-        <!-- Card 1 -->
-        <div class="testimonial-card">
+        <h2>What Our <span>Clients Say</span></h2>
 
-            <img src="images/client1.jpg" alt="Client">
+        <div class="line"></div>
 
-            <h3>Rahul Kumar</h3>
+    </div>
+
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial">
 
             <div class="stars">
-                ⭐⭐⭐⭐⭐
+                ★★★★★
             </div>
 
             <p>
-                "Bhanu Photography made our wedding unforgettable.
-                Every picture was beautifully captured and edited."
+                "Amazing photography! Every picture from our
+                wedding was beautiful and full of emotion."
             </p>
+
+            <h3>Priya & Rahul</h3>
+
+            <small>Wedding Client</small>
 
         </div>
 
-        <!-- Card 2 -->
-        <div class="testimonial-card">
 
-            <img src="images/client2.jpg" alt="Client">
-
-            <h3>Priya Sharma</h3>
+        <div class="testimonial">
 
             <div class="stars">
-                ⭐⭐⭐⭐⭐
+                ★★★★★
             </div>
 
             <p>
-                "Professional team, amazing creativity,
-                and excellent quality photographs."
+                "Very professional team and wonderful editing.
+                We loved every photograph."
             </p>
+
+            <h3>Harika</h3>
+
+            <small>Pre-Wedding Client</small>
 
         </div>
 
-        <!-- Card 3 -->
-        <div class="testimonial-card">
 
-            <img src="images/client3.jpg" alt="Client">
-
-            <h3>Arjun Reddy</h3>
+        <div class="testimonial">
 
             <div class="stars">
-                ⭐⭐⭐⭐⭐
+                ★★★★★
             </div>
 
             <p>
-                "Highly recommended for weddings and
-                pre-wedding shoots. Fantastic experience!"
+                "They made our special day even more memorable.
+                Highly recommended!"
             </p>
+
+            <h3>Arjun</h3>
+
+            <small>Event Client</small>
 
         </div>
 
     </div>
 
 </section>
-<!-- ================= INSTAGRAM ================= -->
 
-<section class="instagram">
 
-    <h4>Follow Us</h4>
+<!-- ================= BOOKING CTA ================= -->
 
-    <h2>Instagram Gallery</h2>
+<section class="booking-cta">
 
-    <p>@bhanu_photography</p>
+    <div class="cta-overlay"></div>
 
-    <div class="instagram-gallery">
+    <div class="cta-content">
 
-        <div class="insta-card">
-            <img src="images/gallery/insta1.jpg" alt="Instagram Photo">
-            <div class="overlay">
-                <i class="fab fa-instagram"></i>
-            </div>
-        </div>
+        <p>YOUR SPECIAL MOMENT DESERVES TO BE REMEMBERED</p>
 
-        <div class="insta-card">
-            <img src="images/gallery/insta2.jpg" alt="Instagram Photo">
-            <div class="overlay">
-                <i class="fab fa-instagram"></i>
-            </div>
-        </div>
+        <h2>
+            Let's Capture something
+            <span>Beautiful Story</span>
+        </h2>
 
-        <div class="insta-card">
-            <img src="images/gallery/insta3.jpg" alt="Instagram Photo">
-            <div class="overlay">
-                <i class="fab fa-instagram"></i>
-            </div>
-        </div>
+        <p>
+            Book your photography session with Bhanu Photography.
+        </p>
 
-        <div class="insta-card">
-            <img src="images/gallery/insta4.jpg" alt="Instagram Photo">
-            <div class="overlay">
-                <i class="fab fa-instagram"></i>
-            </div>
-        </div>
-
-        <div class="insta-card">
-            <img src="images/gallery/insta5.jpg" alt="Instagram Photo">
-            <div class="overlay">
-                <i class="fab fa-instagram"></i>
-            </div>
-        </div>
-
-        <div class="insta-card">
-            <img src="images/gallery/insta6.jpg" alt="Instagram Photo">
-            <div class="overlay">
-                <i class="fab fa-instagram"></i>
-            </div>
-        </div>
+        <a href="booking.html" class="btn gold-btn">
+            <i class="fa-solid fa-calendar-check"></i>
+            Book Your Session
+        </a>
 
     </div>
 
-    <a href="https://instagram.com/" target="_blank" class="insta-btn">
-        <i class="fab fa-instagram"></i> Follow on Instagram
-    </a>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact">
+
+    <div class="section-heading">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>Let's Create Something <span>Beautiful</span></h2>
+
+        <div class="line"></div>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <a href="tel:+916304740134" class="contact-card">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <h3>Call Us</h3>
+
+            <p>+91 6304740134</p>
+
+        </a>
+
+
+        <a href="mailto:bhanuphotography31@gmail.com"
+           class="contact-card">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <h3>Email</h3>
+
+            <p>bhanuphotography31@gmail.com</p>
+
+        </a>
+
+
+        <a href="https://wa.me/916304740134"
+           target="_blank"
+           class="contact-card">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <h3>WhatsApp</h3>
+
+            <p>Chat With Us</p>
+
+        </a>
+
+
+        <a href="contact.html" class="contact-card">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>Location</h3>
+
+            <p>Telangana, India</p>
+
+        </a>
+
+    </div>
 
 </section>
 
-<!--======================
-FOOTER
-=======================-->
 
-<footer class="footer">
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a href="https://wa.me/916304740134"
+   target="_blank"
+   class="whatsapp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
 
     <div class="footer-container">
 
-        <!-- Company -->
+        <div class="footer-column">
+            
+            <div class="footer-logo">
+                <img src="images/bhanu-photography-transparent-final.png"
+                alt="Bhanu Photography Logo">
+            </div>
 
-        <div class="footer-box">
-
-            <img src="images/logo.png" alt="Bhanu Photography" class="footer-logo">
 
             <p>
-
-                Capturing beautiful memories with creativity and passion.
-
+                Capturing moments and creating memories
+                that last forever.
             </p>
 
         </div>
 
-        <!-- Quick Links -->
 
-        <div class="footer-box">
+        <div class="footer-column">
 
             <h3>Quick Links</h3>
 
-            <ul>
-
-                <li><a href="index.html">Home</a></li>
-
-                <li><a href="about.html">About</a></li>
-
-                <li><a href="gallery.html">Gallery</a></li>
-
-                <li><a href="pricing.html">Pricing</a></li>
-
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="contact.html">Contact</a>
 
         </div>
 
-        <!-- Contact -->
 
-        <div class="footer-box">
+        <div class="footer-column">
 
             <h3>Contact</h3>
 
             <p>
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                Gajwel, Siddipet, Telangana
-
-            </p>
-
-            <p>
-
                 <i class="fa-solid fa-phone"></i>
-
-                <a href="tel:+916304740134">+91 6304740134</a>
-
+                +91 6304740134
             </p>
 
             <p>
-
                 <i class="fa-solid fa-envelope"></i>
-
-                <a href="mailto:bhanuphotography31@gmail.com">
-
                 bhanuphotography31@gmail.com
-
-                </a>
-
             </p>
 
         </div>
 
-        <!-- Social -->
 
-        <div class="footer-box">
+        <div class="footer-column">
 
             <h3>Follow Us</h3>
+            
+            <div class="social">
+                
+                <a href="https://www.instagram.com/bhanu_photography_07/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Bhanu Photography Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-            <div class="footer-social">
+                <a href="https://youtube.com/@bhanuphotography-1" target="_blank" rel="noopener noreferrer" 
+                    aria-label="Bhanu Photography YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
 
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-
-                <a href="https://wa.me/916304740134">
-
+                <a href="https://wa.me/qr/DNHH3NGMCNMUF1" target="_blank" rel="noopener noreferrer"
+                    aria-label=" bhanu photography WhatsApp">
                     <i class="fa-brands fa-whatsapp"></i>
-
                 </a>
 
             </div>
+
 
         </div>
 
     </div>
 
-    <hr>
+    <div class="copyright">
 
-    <div class="footer-bottom">
-
-        <p>
-
-            © 2026 Bhanu Photography | All Rights Reserved.
-
-        </p>
+        © 2026 Bhanu Photography.
+        All Rights Reserved.
 
     </div>
 
 </footer>
 
-<!-- Back To Top -->
 
-<button id="topBtn">
-
-<i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-<!-- ================= WHATSAPP BUTTON ================= -->
-
-<a href="https://wa.me/916304740134" class="whatsapp" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<!-- ================= BACK TO TOP ================= -->
-
-<button id="topBtn">
-    <i class="fa-solid fa-arrow-up"></i>
-</button>
-
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- ================= JAVASCRIPT ================= -->
 
 <script>
-AOS.init({
-    duration:1200,
-    once:true
-});
+const navbarWrapper = document.querySelector(".navbar-wrapper");
+let previousScroll = window.scrollY;
+
+window.addEventListener("scroll", function () {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > previousScroll && currentScroll > 100) {
+        navbarWrapper.classList.add("hide-navbar");
+    } else {
+        navbarWrapper.classList.remove("hide-navbar");
+    }
+
+    previousScroll = currentScroll;
+}, { passive: true });
 </script>
+
 
 </body>
 </html>
